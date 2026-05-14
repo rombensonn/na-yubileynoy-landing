@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Design Preview - На Юбилейной</title>
+    <style>
+      :root {
+        --ink: #14110f;
+        --steel: #eceeea;
+        --copper: #bf6a2f;
+        --blue-steel: #174c5a;
+        --paper: #f7f8f6;
+        --border: #d7d8d0;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: var(--paper);
+        color: var(--ink);
+      }
+      main {
+        width: min(100% - 32px, 980px);
+        margin: 48px auto;
+      }
+      .hero {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        border-radius: 8px;
+        background: var(--ink);
+        color: white;
+        padding: 32px;
+      }
+      .photo {
+        min-height: 300px;
+        border-radius: 8px;
+        background:
+          linear-gradient(125deg, rgba(20, 17, 15, 0.95), rgba(23, 76, 90, 0.84), rgba(191, 106, 47, 0.78)),
+          #1d1915;
+      }
+      .card {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: white;
+        padding: 24px;
+      }
+      .btn {
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
+        border-radius: 8px;
+        background: var(--copper);
+        color: white;
+        padding: 0 18px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <p>Новая визуальная система</p>
+          <h1>Графит, медный рабочий свет и холодная сталь</h1>
+          <span class="btn">Записаться</span>
+        </div>
+        <div class="photo"></div>
+      </section>
+      <section class="card">
+        <h2>UI Surface</h2>
+        <p>Карточки остаются спокойными, но больше не управляют всей страницей.</p>
+      </section>
+    </main>
+  </body>
+</html>

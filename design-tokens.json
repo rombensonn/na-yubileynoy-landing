@@ -1,0 +1,56 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "global": {
+    "color": {
+      "graphite-950": { "$value": "#14110F", "$type": "color" },
+      "graphite-900": { "$value": "#1D1915", "$type": "color" },
+      "graphite-800": { "$value": "#2B2520", "$type": "color" },
+      "graphite-700": { "$value": "#403830", "$type": "color" },
+      "steel-50": { "$value": "#F7F8F6", "$type": "color" },
+      "steel-100": { "$value": "#ECEEEA", "$type": "color" },
+      "steel-200": { "$value": "#D7D8D0", "$type": "color" },
+      "copper-600": { "$value": "#BF6A2F", "$type": "color" },
+      "copper-700": { "$value": "#A95522", "$type": "color" },
+      "blue-steel-700": { "$value": "#174C5A", "$type": "color" },
+      "blue-steel-600": { "$value": "#226675", "$type": "color" },
+      "white": { "$value": "#FFFFFF", "$type": "color" }
+    },
+    "radius": {
+      "card": { "$value": "8px", "$type": "dimension" },
+      "control": { "$value": "8px", "$type": "dimension" }
+    },
+    "space": {
+      "2": { "$value": "8px", "$type": "dimension" },
+      "3": { "$value": "12px", "$type": "dimension" },
+      "4": { "$value": "16px", "$type": "dimension" },
+      "6": { "$value": "24px", "$type": "dimension" },
+      "8": { "$value": "32px", "$type": "dimension" },
+      "12": { "$value": "48px", "$type": "dimension" }
+    }
+  },
+  "semantic": {
+    "color": {
+      "background": { "$value": "{global.color.steel-50}", "$type": "color" },
+      "surface": { "$value": "{global.color.white}", "$type": "color" },
+      "surface-dark": { "$value": "{global.color.graphite-950}", "$type": "color" },
+      "text-primary": { "$value": "{global.color.graphite-950}", "$type": "color" },
+      "text-secondary": { "$value": "{global.color.graphite-700}", "$type": "color" },
+      "primary": { "$value": "{global.color.copper-600}", "$type": "color" },
+      "primary-hover": { "$value": "{global.color.copper-700}", "$type": "color" },
+      "secondary": { "$value": "{global.color.blue-steel-700}", "$type": "color" },
+      "border": { "$value": "{global.color.steel-200}", "$type": "color" }
+    }
+  },
+  "component": {
+    "button": {
+      "radius": { "$value": "{global.radius.control}", "$type": "dimension" },
+      "height-min": { "$value": "44px", "$type": "dimension" },
+      "primary-bg": { "$value": "{semantic.color.primary}", "$type": "color" }
+    },
+    "card": {
+      "radius": { "$value": "{global.radius.card}", "$type": "dimension" },
+      "bg": { "$value": "{semantic.color.surface}", "$type": "color" },
+      "border": { "$value": "{semantic.color.border}", "$type": "color" }
+    }
+  }
+}
